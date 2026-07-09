@@ -1,8 +1,246 @@
-<html>
-    <head>
-        <title>William Wright</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>William Wright — Data Scientist</title>
+<meta name="description" content="Portfolio and CV of William Wright, Data Science graduate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+  const stored = localStorage.getItem('theme');
+  if (stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script>
+</head>
+<body>
+
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="#" class="logo">William Wright</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+      <li>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">&#9728;</span><span class="icon-moon">&#9789;</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about" class="hero container">
+    <div class="hero-photo">
+      <img src="assets/profile-picture.jpg" alt="William Wright profile photo" width="200" height="200">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Data Science Graduate</p>
+      <h1>Hi, I'm Will - Data Science Degree Holder</h1>
+      <p class="bio">
+        Hi, I'm Will, a Data Scientist with an appetite for opportunity
+      </p>
+      <div class="social-links" id="contact">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-header">
+          <h3>Digital &amp; Technology Solutions Degree Apprentice</h3>
+          <span class="timeline-date">Placeholder start — Placeholder end</span>
+        </div>
+        <p class="timeline-company">Airbus</p>
+        <p class="timeline-summary">
+          Rotated through 12 digital placements across the business, applying Python,
+          Linux, and JavaScript to build and support tools used in enterprise engineering
+          environments. Four of the most impactful rotations are highlighted below.
+        </p>
+
+        <div class="rotation-grid">
+
+          <article class="rotation-card">
+            <div class="rotation-header">
+              <h4>Rotation Title Placeholder One</h4>
+              <span class="rotation-date">Placeholder dates</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Linux</span>
+            </div>
+            <ul>
+              <li>Placeholder: automated a manual process with a Python script, saving [X] hours/week for the team.</li>
+              <li>Placeholder: deployed and maintained the tool on a Linux server, handling scheduling via cron.</li>
+            </ul>
+          </article>
+
+          <article class="rotation-card">
+            <div class="rotation-header">
+              <h4>Rotation Title Placeholder Two</h4>
+              <span class="rotation-date">Placeholder dates</span>
+            </div>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+            </div>
+            <ul>
+              <li>Placeholder: built an internal web dashboard in JavaScript to visualise [dataset/metric].</li>
+              <li>Placeholder: connected the dashboard to a Python backend serving data from [system].</li>
+            </ul>
+          </article>
+
+          <article class="rotation-card">
+            <div class="rotation-header">
+              <h4>Rotation Title Placeholder Three</h4>
+              <span class="rotation-date">Placeholder dates</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Linux</span>
+              <span class="tag">Python</span>
+            </div>
+            <ul>
+              <li>Placeholder: supported a Linux-based engineering environment, resolving [X] tickets during the rotation.</li>
+              <li>Placeholder: wrote Python utilities to validate and clean data ahead of downstream reporting.</li>
+            </ul>
+          </article>
+
+          <article class="rotation-card">
+            <div class="rotation-header">
+              <h4>Rotation Title Placeholder Four</h4>
+              <span class="rotation-date">Placeholder dates</span>
+            </div>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Linux</span>
+            </div>
+            <ul>
+              <li>Placeholder: contributed front-end features in JavaScript to an internal enterprise tool.</li>
+              <li>Placeholder: collaborated with a team running on Linux infrastructure to ship the release.</li>
+            </ul>
+          </article>
+
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <h3>Project Title Placeholder One</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">SQL</span>
+        </div>
+        <p>Brief description of the project: the problem it solves, the approach taken, and the outcome or result achieved.</p>
+        <a href="https://github.com/yourusername/project-one" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Title Placeholder Two</h3>
+        <div class="tags">
+          <span class="tag">R</span>
+          <span class="tag">Tidyverse</span>
+          <span class="tag">Shiny</span>
+        </div>
+        <p>Brief description of the project: the problem it solves, the approach taken, and the outcome or result achieved.</p>
+        <a href="https://github.com/yourusername/project-two" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Title Placeholder Three</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Tableau</span>
+        </div>
+        <p>Brief description of the project: the problem it solves, the approach taken, and the outcome or result achieved.</p>
+        <a href="https://github.com/yourusername/project-three" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Title Placeholder Four</h3>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Spark</span>
+          <span class="tag">AWS</span>
+        </div>
+        <p>Brief description of the project: the problem it solves, the approach taken, and the outcome or result achieved.</p>
+        <a href="https://github.com/yourusername/project-four" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">SQL</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Libraries &amp; Frameworks</h3>
+        <div class="tags">
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">TensorFlow</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="tags">
+          <span class="tag">Git</span>
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Jupyter</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <p>&copy; 2026 William Wright. Built with HTML &amp; CSS.</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  });
+</script>
+</body>
 </html>
